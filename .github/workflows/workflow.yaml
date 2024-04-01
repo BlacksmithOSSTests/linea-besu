@@ -10,7 +10,7 @@ on:
 
 jobs:
   build_and_test:
-    runs-on: blacksmith-16vcpu-ubuntu-2204
+    runs-on: blacksmith-32vcpu-ubuntu-2204
     env:
       architecture: "amd64"
       GRADLE_OPTS: "-Xmx6g -Dorg.gradle.parallel=true -Dorg.gradle.workers.max=4"
